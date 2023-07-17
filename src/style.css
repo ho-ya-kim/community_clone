@@ -1,0 +1,313 @@
+@import "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.50;
+}
+
+input, textarea {
+    all: unset;
+    box-sizing: border-box;
+    appearance: none;
+    white-space: normal;
+    word-break: break-word;
+}
+
+textarea {
+    overflow: hidden;
+    width: 100%;
+}
+
+.homeInput {
+    width: 88%;
+}
+
+.tweetTitle {
+    font-size: 14px;
+}
+
+.tweetDetail {
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.tweetComment {
+    font-size: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+body {
+    background-color: bisque;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+button {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form {
+    width: 100%;
+}
+
+.tweet-input::placeholder {
+    color: black;
+    opacity: 0.9;
+}
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.formBtn {
+    font-size: 8pt;
+    cursor: pointer;
+    width: 100%;
+    padding: 7px 20px;
+    text-align: center;
+    color: black;
+    border-radius: 3px;
+    background-color: #04aaff;
+    cursor: pointer;
+}
+
+.cancelBtn {
+    font-size: 8pt;
+    cursor: pointer;
+    background-color: tomato;
+}
+
+/* Profile Page */
+
+.profileForm {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nwitter Factory */
+
+.factoryForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.factoryInput__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.factoryInput__input {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0px 10px;
+    color: black;
+    border: 1px solid #04aaff;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.factoryInput__arrow {
+    position: absolute;
+    right: 0;
+    background-color: #04aaff;
+    height: 100%;
+    width: 40px;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 3px;
+    color: black;
+}
+
+.factoryInput__label {
+    color: #04aaff;
+    cursor: pointer;
+}
+
+.factoryInput__label span {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.factoryForm__attachment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.factoryForm__attachment img {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.factoryForm__clear {
+    color: #04aaff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.factoryForm__clear span {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/* Nweet */
+
+.tweetEdit .formBtn {
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.tweet {
+    margin-bottom: 3px;
+    background-color: white;
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.tweet h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+.tweet img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.tweet__actions {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.tweet__actions span {
+    cursor: pointer;
+}
+
+.tweet__actions span:first-child {
+    margin-right: 10px;
+}
+
+/* Auth */
+
+.authContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.authBtns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
+}
+
+.authBtn {
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 0px;
+    font-size: 12px;
+    text-align: center;
+    width: 150px;
+    background: white;
+    cursor: pointer;
+}
+
+/* AuthForm */
+
+.authInput {
+    max-width: 320px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.authSubmit {
+    text-align: center;
+    background: #04aaff;
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.authError {
+    color: tomato;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.authSwitch {
+    color: #04aaff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 12px;
+    text-decoration: underline;
+}
